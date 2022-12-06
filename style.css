@@ -1,5 +1,6 @@
-*{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+body{
+    font-family: 'PT Serif', serif;
+    font-family: 'Solway', serif;
     background-color: bisque;
 }
 
@@ -7,11 +8,8 @@ header{
     text-align: center;
 }
 nav{
-    background-color: aquamarine;
+    background-color: rgb(125, 206, 32);
     border-radius:40px;
-    
-
-    
 }
 nav ul{
     list-style: none;
@@ -23,6 +21,24 @@ nav ul{
    
   }
 .nav_item{
-    font-size:2rem;
+    font-size:30px;
+    font-weight: 100;
     display: inline-block;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    border-color: black;
+    
+   
+}
+article{
+    border-radius: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    border-style:solid;
+    margin: 30px;
 }
