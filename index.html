@@ -34,24 +34,52 @@
 </nav>
 <main>
 <section class="container">
-    <article class="pasta">
+    <article class="center-axis">
         <h2>Today's Specials</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
    
     </article>
 </section>
 <section class="container">
-    <article>
+    <article class="center-axis">
         <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
     </article>
-    <article>
+    <article class="center-axis">
         <h2>Reservations</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p> -->
+        <form>
+            <div class="padding">
+              <label for='email'>Email</label>
+              <input type='email' id='email' name='email' required> 
+            </div>
+            <div class="padding">
+              <label for='date'>Date</label>
+              <input type='date' id='date' name='date' required>
+            </div>
+            <div class="padding">
+              <label for='number_of_people'>Number of People</label>
+              <input type="range" id='number_of_people' name='number_of_people' min=1 max=8 value=4 oninput='this.nextElementSibling.value = this.value' required>
+              <output>4</output>
+            </div>
+            <div class="padding">
+              <input type="checkbox" id='policy_checkbox' name='policy_checkbox' required>
+              <label for='policy_checkbox'>I agree to the cancellation policy</label>
+            </div class="padding">
+            <button type="submit" id='submit_booking'>Book now</button>
+          </form>
     </article>
-    <article>
+    <article class="center-axis">
         <h2>Hours</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        <ul>
+            <li class="padding">Monday:9AM TO 10PM</li>
+            <li class="padding">Tuesday:9AM TO 10PM</li>
+            <li class="padding">Wednesday:9AM TO 10PM</li>
+            <li class="padding">Thursday:9AM TO 10PM</li>
+            <li class="padding">Friday:9AM TO 10PM</li>
+            <li class="padding">Saturday:9AM TO 10PM</li>
+            <li class="padding">Sunday:9AM TO 10PM</li>
+        </ul>
     </article>
 
 </section>
